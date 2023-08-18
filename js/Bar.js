@@ -1,0 +1,18 @@
+export class Bar {
+  constructor(x, y, width, height, color, index) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+    this.color = color;
+    this.index = index;
+  }
+
+  update = (mic) => {
+    this.height = mic;
+  };
+
+  draw = (ctx, volume) => {
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+  };
+}

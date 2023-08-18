@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="snail" data-name="Layer 1" viewBox="0 0 496.07 269.85"><defs><style>.cls-1{fill:none;stroke:url(#gradient);stroke-miterlimit:10;stroke-width:2;}</style>
+   <?xml-stylesheet type="text/css" href="svg.css" ?>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
         <stop offset="0%" stop-color="red"/>
         <stop offset="20%" stop-color="yellow"/>

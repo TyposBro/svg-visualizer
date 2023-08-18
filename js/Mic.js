@@ -16,4 +16,17 @@ export class Mic {
       .bind(this)
       .catch(alert);
   }
+  getSamples = () => {
+    if (!this.init) return;
+    this.analyser.getByteTimeDomainData(this.dataArray);
+    return [...this.dataArray].map((e) => e / 128 - 1);
+  };
+  getVolume = () => {
+    if (!this.init) return;
+    this.analyser.getByteTimeDomainData(this.dataArray);
+    const normalizedSamples = [...this.dataArray].map((e) => e / 128 - 1);
+    let sum = 0;
+    normalizedSamples.forEach((e) => (sum += e * e));
+    return Math.sqrt(sum / normalizedSamples.length);
+  };
 }

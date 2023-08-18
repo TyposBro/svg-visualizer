@@ -9,7 +9,7 @@ export class Bar {
   }
 
   update = (mic) => {
-    this.height = mic;
+    this.height = mic * 1000;
   };
 
   draw = (ctx, volume) => {
